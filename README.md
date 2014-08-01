@@ -11,3 +11,8 @@ DateRange fiscalOctober = calendar.getMonth(Calendar.OCTOBER)
 assert fiscalOctober.dateFrom == Date.parse("MM-dd-yyyy", "10-04-2015")
 assert fiscalOctober.dateTo == Date.parse("MM-dd-yyyy", "10-31-2015")
 ````
+
+Compiling and packaging the source:
+```
+./gradlew jar
+```
