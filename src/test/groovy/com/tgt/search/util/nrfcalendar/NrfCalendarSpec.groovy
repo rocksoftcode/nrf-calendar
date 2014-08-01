@@ -43,6 +43,18 @@ class NrfCalendarSpec extends Specification {
     range.dateTo == Date.parse("MM-dd-yyyy", "11-01-2014")
   }
 
+  def "Gets date range for months in 2015"() {
+    setup:
+    NrfCalendar nrfCalendar = new NrfCalendar(2015)
+
+    when:
+    DateRange range = nrfCalendar.getMonth(Calendar.DECEMBER)
+
+    then:
+    range.dateFrom == Date.parse("MM-dd-yyyy", "11-29-2015")
+    range.dateTo == Date.parse("MM-dd-yyyy", "01-02-2016")
+  }
+
   def "Gets weeks in month"() {
     setup:
     NrfCalendar nrfCalendar = new NrfCalendar(2014)

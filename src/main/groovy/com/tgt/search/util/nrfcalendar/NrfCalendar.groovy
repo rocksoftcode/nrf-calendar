@@ -24,7 +24,7 @@ class NrfCalendar {
   }
 
   void snapToFirstWeek(Calendar calendar) {
-    calendar.setMinimalDaysInFirstWeek(7)
+    calendar.setMinimalDaysInFirstWeek(5)
     calendar.setFirstDayOfWeek(Calendar.SUNDAY)
     calendar.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY)
     calendar.set(Calendar.WEEK_OF_MONTH, 1)
