@@ -1,6 +1,8 @@
 package com.tgt.search.util.nrfcalendar
 
 import spock.lang.Specification
+import com.tgt.search.util.nrfcalendar.java.DateRange
+import com.tgt.search.util.nrfcalendar.java.NrfCalendar
 
 class NrfCalendarSpec extends Specification {
 
