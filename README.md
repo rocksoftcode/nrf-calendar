@@ -1,15 +1,16 @@
 nrf-calendar
 ============
 
-Provides a Java-compatible API for the National Retail Federation's 4-5-4 calendar.  As you can see, the code is written in Groovy.  A JAR can be downloaded from the dist directory.
+Provides a Java implementation of the National Retail Federation's 4-5-4 calendar.
 
-Usage (Groovy):
+Usage:
 
 ```
-NrfCalendar calendar = new NrfCalendar(2015)
-DateRange fiscalOctober = calendar.getMonth(Calendar.OCTOBER)
-assert fiscalOctober.dateFrom == Date.parse("MM-dd-yyyy", "10-04-2015")
-assert fiscalOctober.dateTo == Date.parse("MM-dd-yyyy", "10-31-2015")
+NrfCalendar calendar = new NrfCalendar(2015);
+DateRange fiscalOctober = calendar.getMonth(Calendar.OCTOBER);
+SimpleDateFormat format = new SimpleDateFormat("MM-dd-yyyy");
+assert fiscalOctober.getDateFrom() == format.parse("10-04-2015", new ParsePosition(0));
+assert fiscalOctober.getDateTo() == format.parse("10-31-2015", new ParsePosition(0));
 ````
 
 Compiling and packaging the source:
