@@ -1,7 +1,7 @@
 nrf-calendar
 ============
 
-Provides a Java-compatible API for the National Retail Federation's 4-5-4 calendar.  As you can see, the code is written in Groovy.  A JAR can be downloaded from the dist directory.
+Provides a Java-compatible API for the National Retail Federation's 4-5-4 calendar.  As you can see, the code is written in Groovy.  A "fat" (includes Groovy dependency) JAR can be downloaded from the dist directory.
 
 Usage (Groovy):
 
